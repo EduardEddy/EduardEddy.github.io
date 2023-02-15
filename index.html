@@ -43,8 +43,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#about">Información</a></li>
+          <!--li><a class="nav-link scrollto" href="#services">Services</a></li-->
           <li><a class="nav-link scrollto " href="#work">Work</a></li>
           <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -95,6 +95,11 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="box-shadow-full">
+              <div class="title-box-2">
+                <h5 class="title-left">
+                  Información <small style="font-size: 16px;">(Eduard Eddy Acevedo Bracho)</small>
+                </h5>
+              </div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="row">
@@ -105,13 +110,16 @@
                     </div>
                     <div class="col-sm-6 col-md-7">
                       <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Eduard Eddy Acevedo Bracho</span></p>
-                        <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
                         <p><span class="title-s">Email: </span> <span>eduardeddyacevedo@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>+57 (304) 671 9444</span></p>
+                        <p><span class="title-s">Telf: </span> <span>+57 (304) 671 9444</span></p>
+                        <p><span class="title-s">GitHub: </span> <span>EduardEddy</span></p>
+                        <p><span class="title-s">LinkedIn: </span> <span>Eduard Acevedo</span></p>
+                        <p><span class="title-s">Skype: </span> <span>eduard-acevedo</span></p>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="col-md-6">
                   <div class="skill-mf">
                     <p class="title-s">Skill</p>
                     <div class="row">
@@ -172,33 +180,14 @@
                         </div>
                       </div>
                     </div>
-
-
-                    
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-                      imperdiet et, porttitor
-                      at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                      porttitor accumsan tincidunt.
-                    </p>
-                    <p class="lead">
-                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                      porttitor volutpat. Vestibulum
-                      ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
-                    </p>
-                    <p class="lead">
-                      Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                      Nulla porttitor accumsan
-                      tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                    
+                    <p class="lead text-justify">
+                      Ingeniero en informatica graduado en la Universidad Rafael Belloso Chacín, Maracaibo - Venezuela &#127483;&#127466;
+                      Desarrollador de aplicaicones WEB y Móviles
                     </p>
                   </div>
                 </div>
@@ -210,7 +199,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
+    <!--section id="services" class="services-mf pt-5 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -318,14 +307,15 @@
           </div>
         </div>
       </div>
-    </section><!-- End Services Section -->
+    </section-->
+    <!-- End Services Section -->
 
     <!-- ======= Counter Section ======= -->
     <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container position-relative">
         <div class="row">
-          <div class="col-sm-3 col-lg-3">
+          <!--div class="col-sm-3 col-lg-3">
             <div class="counter-box counter-box pt-4 pt-md-0">
               <div class="counter-ico">
                 <span class="ico-circle"><i class="bi bi-check"></i></span>
@@ -368,7 +358,7 @@
                 <span class="counter-text">AWARD WON</span>
               </div>
             </div>
-          </div>
+          </div-->
         </div>
       </div>
     </div><!-- End Counter Section -->
@@ -389,7 +379,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="portfolio_web">
           <div class="col-md-4">
             <div class="work-box">
               <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
@@ -828,9 +818,57 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
+    document.addEventListener("DOMContentLoaded", async function(event) {
+      const data = [];
+      const resp = await fetch('https://gag-429cc.firebaseio.com/experiencia/.json');
+      const respData = await resp.json();
       
+      let toHtml = '';
+      toHtml+=htmlData(respData["proyecto15"]);
+      toHtml+=htmlData(respData["proyecto16"]);
+      toHtml+=htmlData(respData["proyecto5"]);
+      toHtml+=htmlData(respData["proyecto9"]);
+      toHtml+=htmlData(respData["proyecto12"]);
+      toHtml+=htmlData(respData["proyecto10"]);
+      toHtml+=htmlData(respData["proyecto13"]);
+      toHtml+=htmlData(respData["proyecto3"]);
+      toHtml+=htmlData(respData["proyecto1"]);
+      toHtml+=htmlData(respData["proyecto4"]);
+      toHtml+=htmlData(respData["proyecto2"]);
+      toHtml+=htmlData(respData["proyecto6"]);
+      toHtml+=htmlData(respData["proyecto8"]);
+      document.getElementById("portfolio_web").innerHTML = toHtml;
     });
+
+    function htmlData(data) {
+      const info = `<div class="col-md-4">
+        <div class="work-box">
+          <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="${data.images['img1']}" alt="" class="img-fluid">
+            </div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">Proyecto: ${data['nombre']}</h2>
+                <div class="w-more">
+                  <strong>Tecnólogias</strong> <span class="w-ctegory">${data['lenguajes']}</span> 
+                  <br />
+                  <strong>Año</strong> <span class="w-date">${data['anio']}</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="w-like">
+                  <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+      return info;
+    }
   </script>
 </body>
 
