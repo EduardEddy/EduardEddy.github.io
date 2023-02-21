@@ -188,7 +188,7 @@
                     
                     <p class="lead text-justify">
                       Ingeniero en inform&aacute;tica graduado en la Universidad Rafael Belloso Chacín, Maracaibo - Venezuela &#127483;&#127466;
-                      Desarrollador de aplicaicones WEB y Móviles
+                      Desarrollador de aplicaciones WEB y Móviles
                     </p>
                   </div>
                 </div>
@@ -228,7 +228,7 @@
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                Aplicaicones WEB
+                Aplicaciones WEB
               </h3>
               <p class="subtitle-a">
               </p>
@@ -271,7 +271,7 @@
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                Aplicaicones Móviles
+                Aplicaciones Móviles
               </h3>
               <p class="subtitle-a">
               </p>
@@ -399,7 +399,29 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+<!-- Button trigger modal -->
+<!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button-->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -461,7 +483,7 @@
     function htmlData(data) {
       const info = `<div class="col-md-4">
         <div class="work-box">
-          <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+          <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox">
             <div class="work-img">
               <img src="${data.images['img1']}" alt="" class="img-fluid">
             </div>
@@ -475,10 +497,13 @@
                   <br />
                   <strong>Año</strong> <span class="w-date">${data['anio']}</span>
                 </div>
+                <div class="w-more">
+                  <span class="w-ctegory text-black">${data['descripcion']}</span>
+                </div>
               </div>
               <div class="col-sm-4">
                 <div class="w-like">
-                  <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong"> <span class="bi bi-plus-circle"></span></a>
+                  
                 </div>
               </div>
             </div>
@@ -486,6 +511,10 @@
         </div>
       </div>`;
       return info;
+    }
+
+    function addProjectToStorage(project) {
+      localStorage.setItem('project', JSON.stringify(project));
     }
   </script>
 </body>
