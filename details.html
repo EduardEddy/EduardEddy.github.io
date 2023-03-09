@@ -116,8 +116,10 @@
   <script>
     document.addEventListener("DOMContentLoaded", async function(event) {
       const queryString = window.location.search;
-      const project = queryString.split('=').pop();
-      
+      const queryArray = queryString.split('&');
+      const project = queryArray[0].split('=').pop();
+      const isMobile = queryArray[1].split('=').pop();
+            
       const resp = await fetch(`https://gag-429cc.firebaseio.com/experiencia/proyecto${project}.json`);
       const data = await resp.json();
       document.getElementById("title_project").innerHTML = data['nombre'];
@@ -130,7 +132,7 @@
       imgArray.forEach(element => {
         images+=`
           <div class="swiper-slide">
-            <img src="${data['images'][element]}" alt="">
+            <img src="${data['images'][element]}" alt="" style="max-width: ${isMobile==='true'?'20rem':''}">
           </div>
         `
       });

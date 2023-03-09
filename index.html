@@ -409,41 +409,43 @@
       const respData = await resp.json();
       
       let toHtml = '';
-      toHtml+=htmlData(respData["proyecto22"]);
-      toHtml+=htmlData(respData["proyecto15"]);
-      toHtml+=htmlData(respData["proyecto16"]);
-      toHtml+=htmlData(respData["proyecto5"]);
-      toHtml+=htmlData(respData["proyecto9"]);
-      toHtml+=htmlData(respData["proyecto12"]);
-      toHtml+=htmlData(respData["proyecto10"]);
-      toHtml+=htmlData(respData["proyecto13"]);
-      toHtml+=htmlData(respData["proyecto3"]);
-      toHtml+=htmlData(respData["proyecto1"]);
-      toHtml+=htmlData(respData["proyecto4"]);
-      toHtml+=htmlData(respData["proyecto2"]);
-      toHtml+=htmlData(respData["proyecto6"]);
-      toHtml+=htmlData(respData["proyecto8"]);
+      toHtml+=htmlData(respData["proyecto22"], false);
+      toHtml+=htmlData(respData["proyecto15"], false);
+      toHtml+=htmlData(respData["proyecto16"], false);
+      toHtml+=htmlData(respData["proyecto5"], false);
+      toHtml+=htmlData(respData["proyecto9"], false);
+      toHtml+=htmlData(respData["proyecto12"], false);
+      toHtml+=htmlData(respData["proyecto10"], false);
+      toHtml+=htmlData(respData["proyecto13"], false);
+      toHtml+=htmlData(respData["proyecto3"], false);
+      toHtml+=htmlData(respData["proyecto1"], false);
+      toHtml+=htmlData(respData["proyecto4"], false);
+      toHtml+=htmlData(respData["proyecto2"], false);
+      toHtml+=htmlData(respData["proyecto6"], false);
+      toHtml+=htmlData(respData["proyecto8"], false);
       document.getElementById("portfolio_web").innerHTML = toHtml;
 
       let toHtmlMobile = '';
       
-      toHtmlMobile+=htmlData(respData["proyecto18"]);
-      toHtmlMobile+=htmlData(respData["proyecto21"]);
-      toHtmlMobile+=htmlData(respData["proyecto20"]);
-      toHtmlMobile+=htmlData(respData["proyecto17"]);
-      toHtmlMobile+=htmlData(respData["proyecto19"]);
-      toHtmlMobile+=htmlData(respData["proyecto7"]);
-      toHtmlMobile+=htmlData(respData["proyecto11"]);
-      toHtmlMobile+=htmlData(respData["proyecto14"]);
+      toHtmlMobile+=htmlData(respData["proyecto18"], true);
+      toHtmlMobile+=htmlData(respData["proyecto21"], true);
+      toHtmlMobile+=htmlData(respData["proyecto20"], true);
+      toHtmlMobile+=htmlData(respData["proyecto17"], true);
+      toHtmlMobile+=htmlData(respData["proyecto19"], true);
+      toHtmlMobile+=htmlData(respData["proyecto7"], true);
+      toHtmlMobile+=htmlData(respData["proyecto11"], true);
+      toHtmlMobile+=htmlData(respData["proyecto14"], true);
       document.getElementById("portfolio_mobile").innerHTML = toHtmlMobile;
     });
 
-    function htmlData(data) {
+    function htmlData(data, mobile) {
       const info = `<div class="col-md-4">
         <div class="work-box">
-          <a href="./details.html?project=${data['position']}" data-gallery="portfolioGallery" class="portfolio-lightbox" target='_blank'>
+          <a href="./details.html?project=${data['position']}&mobile=${mobile}" data-gallery="portfolioGallery" class="portfolio-lightbox" target='_blank'>
             <div class="work-img">
-              <img src="${data.images['img1']}" alt="" class="img-fluid">
+              <center>
+                <img src="${data.images['img1']}" alt="" class="img-fluid" style="max-width: ${mobile?'20rem':''}">
+              </center>  
             </div>
           </a>
           <div class="work-content">
