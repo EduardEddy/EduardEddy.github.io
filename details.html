@@ -58,11 +58,11 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>sInformación</h3>
               <p id="anio"></p>
               <ul>
                 <li><strong>Tecnologias</strong>: <span id="tecnologia"></span></li>
-                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Client</strong>: <span id="company"></span></li>
                 <li><strong>Project date</strong>: 01 March, 2020</li>
                 <li><strong>Project URL</strong>: <span id="urls"></span></li>
               </ul>
@@ -127,6 +127,7 @@
       document.getElementById("activities").innerHTML = data['actividades'];
       document.getElementById("anio").innerHTML = data['anio'];
       document.getElementById("tecnologia").innerHTML = data['lenguajes'];
+      document.getElementById("company").innerHTML = data['empresa'];
       const imgArray = Object.keys(data['images']);
       let images = '';
       imgArray.forEach(element => {
