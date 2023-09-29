@@ -69,10 +69,12 @@
             <div class="portfolio-description">
               <h2>Descripción</h2>
               <p id="description"></p>
+              <p id="description2"></p>
             </div>
             <div class="portfolio-description">
               <h2>Actividades</h2>
               <p id="activities"></p>
+              <p id="activities2"></p>
             </div>
           </div>
         </div>
@@ -123,7 +125,9 @@
       const data = await resp.json();
       document.getElementById("title_project").innerHTML = data['nombre'];
       document.getElementById("description").innerHTML = data['descripcion'];
+      document.getElementById("description2").innerHTML = data['description'];
       document.getElementById("activities").innerHTML = data['actividades'];
+      document.getElementById("activities2").innerHTML = data['activities'];
       document.getElementById("anio").innerHTML = data['anio'];
       document.getElementById("tecnologia").innerHTML = data['lenguajes'];
       document.getElementById("company").innerHTML = data['empresa'];
