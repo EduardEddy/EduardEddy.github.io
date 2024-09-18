@@ -1,464 +1,750 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Developer Eduard Acevedo</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Developer Eduard Acevedo</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/ico/user1.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/ico/user1.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo"><a href="index.html"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-<body>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">Información</a></li>
+            <!--li><a class="nav-link scrollto" href="#services">Services</a></li-->
+            <li><a class="nav-link scrollto" href="#web">WEB</a></li>
+            <li><a class="nav-link scrollto" href="#mobile">Móvil</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#certificados">Certificados</a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Descargar cv</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li>
+                  <a
+                    href="assets/pdfs/eduard_acevedo_esp.pdf"
+                    target="_blank"
+                    download
+                    >Español</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="assets/pdfs/eduard_acevedo_eng.pdf"
+                    target="_blank"
+                    download
+                    >English</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html"></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Información</a></li>
-          <!--li><a class="nav-link scrollto" href="#services">Services</a></li-->
-          <li><a class="nav-link scrollto " href="#web">WEB</a></li>
-          <li><a class="nav-link scrollto " href="#mobile">Móvil</a></li>
-          <li><a class="nav-link scrollto " href="#certificados">Certificados</a></li>
-          <li class="dropdown"><a href="#"><span>Descargar cv</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="assets/pdfs/eduard_acevedo_esp.pdf" target="_blank" download>Español</a></li>
-              <li><a href="assets/pdfs/eduard_acevedo_eng.pdf" target="_blank" download>English</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+    <!-- ======= Hero Section ======= -->
+    <div
+      id="hero"
+      class="hero route bg-image"
+      style="background-image: url(assets/img/images/bg-programer.jpg)"
+    >
+      <div class="overlay-itro"></div>
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <!--<p class="display-6 color-d">Hello, world!</p>-->
+            <h1 class="hero-title mb-4">Eduard Acevedo</h1>
+            <p class="hero-subtitle">
+              <span
+                class="typed"
+                data-typed-items="Developer, Mobile, Backend, FullStack"
+              ></span>
+            </p>
+            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          </div>
+        </div>
+      </div>
     </div>
-  </header><!-- End Header -->
+    <!-- End Hero Section -->
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/images/bg-programer.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about-mf sect-pt4 route">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">Eduard Acevedo</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Mobile, Backend, FullStack"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
-      </div>
-    </div>
-  </div><!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="title-box-2">
-                <h5 class="title-left">
-                  Información <small style="font-size: 16px;">(Eduard Eddy Acevedo Bracho)</small>
-                </h5>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="https://avatars.githubusercontent.com/u/22474069?s=400&u=5fa8fb2992924e70850e369129e0f0774573032d&v=4" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Email: </span> <span> <a href="mailto:eduardeddyacevedo@gmail.com" target="_blank">eduardeddyacevedo@gmail.com</a></span></p>
-                        <p><span class="title-s">Telf: </span> <span><a href="https://wa.me/+573046719444" target="_blank">+57 (304) 671 9444</a></span></p>
-                        <p><span class="title-s">GitHub: </span> <span><a href="https://github.com/EduardEddy" target="_blank">EduardEddy</a></span></p>
-                        <p><span class="title-s">LinkedIn: </span> <span><a href="https://www.linkedin.com/in/eduard-eddy-acevedo-bracho-a6209b6a" target="_blank">Eduard Acevedo</a></span></p>
-                        <p><span class="title-s">Skype: </span> <span>eduard-acevedo</span></p>
-                      </div>
-                    </div>
-                  </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    Información
+                    <small style="font-size: 16px"
+                      >(Eduard Eddy Acevedo Bracho)</small
+                    >
+                  </h5>
                 </div>
-                <div class="col-md-6">
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
+                <div class="row">
+                  <div class="col-md-6">
                     <div class="row">
-                      <div class="col-md-6">
-                        <img src="assets/img/logos/flutter.png" class="img-fluid rounded b-shadow-a" width="25" alt="">
-                        <span>Flutter</span>
-                        <div class="progress" style="height: 0.2rem">
-                          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="col-sm-6 col-md-5">
+                        <div class="about-img">
+                          <img
+                            src="https://avatars.githubusercontent.com/u/22474069?s=400&u=5fa8fb2992924e70850e369129e0f0774573032d&v=4"
+                            class="img-fluid rounded b-shadow-a"
+                            alt=""
+                          />
                         </div>
-                        
-                        <img src="assets/img/logos/laravel.png" class="img-fluid rounded b-shadow-a" width="25" alt="">
-                        <span>Laravel</span>
-                        <div class="progress" style="height: 0.2rem">
-                          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        
-                        <img src="assets/img/logos/nodejs.png" class="img-fluid rounded b-shadow-a" width="25" alt="">
-                        <span>NodeJs + Express</span>
-                        <div class="progress" style="height: 0.2rem">
-                          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-    
-                        <img src="assets/img/logos/typescript.png" class="img-fluid rounded b-shadow-a" width="25" alt="">
-                        <span>TypeScript</span>
-                        <div class="progress" style="height: 0.2rem">
-                          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-    
-                        <img src="assets/img/logos/vue.png" class="img-fluid rounded b-shadow-a" width="25" alt="">
-                        <span>VueJs</span>
-                        <div class="progress" style="height: 0.2rem">
-                          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-    
                       </div>
-                      <div class="col-md-6">
-                        <img src="assets/img/logos/nextjs.png" class="img-fluid rounded b-shadow-a" width="25" alt="">
-                        <span>NextJs</span>
-                        <div class="progress" style="height: 0.2rem">
-                          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <img src="assets/img/logos/git.png" class="img-fluid rounded b-shadow-a" width="25" alt="">
-                        <span>Git</span>
-                        <div class="progress" style="height: 0.2rem">
-                          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-    
-                        <img src="assets/img/logos/bootstrap.png" class="img-fluid rounded b-shadow-a" width="25" alt="">
-                        <span>Bootstrap</span>
-                        <div class="progress" style="height: 0.2rem">
-                          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-    
-                        <img src="assets/img/logos/docker.png" class="img-fluid rounded b-shadow-a" width="25" alt="">
-                        <span>Docker</span>
-                        <div class="progress" style="height: 0.2rem">
-                          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="col-sm-6 col-md-7">
+                        <div class="about-info">
+                          <p>
+                            <span class="title-s">Email: </span>
+                            <span>
+                              <a
+                                href="mailto:eduardeddyacevedo@gmail.com"
+                                target="_blank"
+                                >eduardeddyacevedo@gmail.com</a
+                              ></span
+                            >
+                          </p>
+                          <p>
+                            <span class="title-s">Telf: </span>
+                            <span
+                              ><a
+                                href="https://wa.me/+573046719444"
+                                target="_blank"
+                                >+57 (304) 671 9444</a
+                              ></span
+                            >
+                          </p>
+                          <p>
+                            <span class="title-s">GitHub: </span>
+                            <span
+                              ><a
+                                href="https://github.com/EduardEddy"
+                                target="_blank"
+                                >EduardEddy</a
+                              ></span
+                            >
+                          </p>
+                          <p>
+                            <span class="title-s">LinkedIn: </span>
+                            <span
+                              ><a
+                                href="https://www.linkedin.com/in/eduard-eddy-acevedo-bracho-a6209b6a"
+                                target="_blank"
+                                >Eduard Acevedo</a
+                              ></span
+                            >
+                          </p>
+                          <p>
+                            <span class="title-s">Skype: </span>
+                            <span>eduard-acevedo</span>
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="about-me pt-4 pt-md-0">
-                    
-                    <p class="lead text-justify">
-                      Ingeniero en inform&aacute;tica graduado en la Universidad Rafael Belloso Chacín, Maracaibo - Venezuela &#127483;&#127466;
-                      Desarrollador de aplicaciones WEB y Móviles
-                    </p>
+                  <div class="col-md-6">
+                    <div class="skill-mf">
+                      <p class="title-s">Skill</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img
+                            src="assets/img/logos/flutter.png"
+                            class="img-fluid rounded b-shadow-a"
+                            width="25"
+                            alt=""
+                          />
+                          <span>Flutter</span>
+                          <div class="progress" style="height: 0.2rem">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 100%"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+
+                          <img
+                            src="assets/img/logos/laravel.png"
+                            class="img-fluid rounded b-shadow-a"
+                            width="25"
+                            alt=""
+                          />
+                          <span>Laravel</span>
+                          <div class="progress" style="height: 0.2rem">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 100%"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+
+                          <img
+                            src="assets/img/logos/nodejs.png"
+                            class="img-fluid rounded b-shadow-a"
+                            width="25"
+                            alt=""
+                          />
+                          <span>NodeJs + Express</span>
+                          <div class="progress" style="height: 0.2rem">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 100%"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+
+                          <img
+                            src="assets/img/logos/typescript.png"
+                            class="img-fluid rounded b-shadow-a"
+                            width="25"
+                            alt=""
+                          />
+                          <span>TypeScript</span>
+                          <div class="progress" style="height: 0.2rem">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 100%"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+
+                          <img
+                            src="assets/img/logos/vue.png"
+                            class="img-fluid rounded b-shadow-a"
+                            width="25"
+                            alt=""
+                          />
+                          <span>VueJs</span>
+                          <div class="progress" style="height: 0.2rem">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 100%"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <img
+                            src="assets/img/logos/nextjs.png"
+                            class="img-fluid rounded b-shadow-a"
+                            width="25"
+                            alt=""
+                          />
+                          <span>NextJs</span>
+                          <div class="progress" style="height: 0.2rem">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 100%"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <img
+                            src="assets/img/logos/git.png"
+                            class="img-fluid rounded b-shadow-a"
+                            width="25"
+                            alt=""
+                          />
+                          <span>Git</span>
+                          <div class="progress" style="height: 0.2rem">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 100%"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+
+                          <img
+                            src="assets/img/logos/bootstrap.png"
+                            class="img-fluid rounded b-shadow-a"
+                            width="25"
+                            alt=""
+                          />
+                          <span>Bootstrap</span>
+                          <div class="progress" style="height: 0.2rem">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 100%"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+
+                          <img
+                            src="assets/img/logos/docker.png"
+                            class="img-fluid rounded b-shadow-a"
+                            width="25"
+                            alt=""
+                          />
+                          <span>Docker</span>
+                          <div class="progress" style="height: 0.2rem">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 100%"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="about-me pt-4 pt-md-0">
+                      <p class="lead text-justify">
+                        Ingeniero en inform&aacute;tica graduado en la
+                        Universidad Rafael Belloso Chacín, Maracaibo - Venezuela
+                        &#127483;&#127466; Desarrollador de aplicaciones WEB y
+                        Móviles
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- End About Section -->
+      </section>
+      <!-- End About Section -->
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-12 col-lg-12">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-globe2"></i></span>
-              </div>
-              <div class="counter-num">
-                <h1>
-                  <span class="counter-text text-white">WEB</span>
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-    
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="web" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Aplicaciones WEB
-              </h3>
-              <p class="subtitle-a">
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="portfolio_web">
-          <!-- LISTADO DE APLICAIONES DESARROLADAS PARA WEB  -->
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-12 col-lg-12">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-globe2"></i></span>
-              </div>
-              <div class="counter-num">
-                <h1>
-                  <span class="counter-text text-white">MOBILE</span>
-                </h1>
+      <!-- ======= Counter Section ======= -->
+      <div
+        class="section-counter paralax-mf bg-image"
+        style="background-image: url(assets/img/counters-bg.jpg)"
+      >
+        <div class="overlay-mf"></div>
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-sm-12 col-lg-12">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-globe2"></i></span>
+                </div>
+                <div class="counter-num">
+                  <h1>
+                    <span class="counter-text text-white">WEB</span>
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div><!-- End Counter Section -->
+      <!-- End Counter Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="mobile" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Aplicaciones Móviles
-              </h3>
-              <p class="subtitle-a">
-              </p>
-              <div class="line-mf"></div>
+      <!-- ======= Portfolio Section ======= -->
+      <section id="web" class="portfolio-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">Aplicaciones WEB</h3>
+                <p class="subtitle-a"></p>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="portfolio_web">
+            <!-- LISTADO DE APLICAIONES DESARROLADAS PARA WEB  -->
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Counter Section ======= -->
+      <div
+        class="section-counter paralax-mf bg-image"
+        style="background-image: url(assets/img/counters-bg.jpg)"
+      >
+        <div class="overlay-mf"></div>
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-sm-12 col-lg-12">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-globe2"></i></span>
+                </div>
+                <div class="counter-num">
+                  <h1>
+                    <span class="counter-text text-white">MOBILE</span>
+                  </h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row" id="portfolio_mobile">
-          <!-- LISTADO DE APLICAIONES DESARROLADAS PARA MOBILE  -->
-        </div>
       </div>
-    </section><!-- End Portfolio Section -->
+      <!-- End Counter Section -->
 
+      <!-- ======= Portfolio Section ======= -->
+      <section id="mobile" class="portfolio-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">Aplicaciones Móviles</h3>
+                <p class="subtitle-a"></p>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="portfolio_mobile">
+            <!-- LISTADO DE APLICAIONES DESARROLADAS PARA MOBILE  -->
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" id="certificados" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+      <!-- ======= Testimonials Section ======= -->
+      <div
+        class="testimonials paralax-mf bg-image"
+        id="certificados"
+        style="background-image: url(assets/img/overlay-bg.jpg)"
+      >
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
             <div class="col-md-12">
-              <div class="testimonial-box">
-                <div class="author-test">
-                  <h1 class="text-center author" style="color: black" >Certificados</h1>
-                </div>
-              </div>
-            </div>
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/logos/flutter.png" height="150" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Flutter</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Guía de desarrollo Andriod IOS. <a href="assets/pdfs/flutter.pdf" target="_blank" class="text-white" download>Descargar</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/logos/dart.png" height="150" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Dart</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Desarrollo con DART. <a href="assets/pdfs/dart.pdf" target="_blank" class="text-white" download>Descargar</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/logos/typescript.png" height="150" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">TypeScript</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Desarrollo con TypeScript. <a href="assets/pdfs/typescript.pdf" target="_blank" class="text-white" download>Descargar</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/logos/nodejs.png" height="150" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">NodeJs API</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Creacion de API node + express. <a href="assets/pdfs/nodeJs.pdf" target="_blank" class="text-white" download>Descargar</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/logos/solid.png" height="150" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Principios Solid</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Principios solid. <a href="assets/pdfs/solid.pdf" target="_blank" class="text-white" download>Descargar</a>
-                      </p>
-                    </div>
+              <div class="col-md-12">
+                <div class="testimonial-box">
+                  <div class="author-test">
+                    <h1 class="text-center author" style="color: black">
+                      Certificados
+                    </h1>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
+              <div
+                class="testimonials-slider swiper"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/logos/flutter.png"
+                          height="150"
+                          alt=""
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author">Flutter</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          Guía de desarrollo Andriod IOS.
+                          <a
+                            href="assets/pdfs/flutter.pdf"
+                            target="_blank"
+                            class="text-white"
+                            download
+                            >Descargar</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/logos/dart.png"
+                          height="150"
+                          alt=""
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author">Dart</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          Desarrollo con DART.
+                          <a
+                            href="assets/pdfs/dart.pdf"
+                            target="_blank"
+                            class="text-white"
+                            download
+                            >Descargar</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/logos/typescript.png"
+                          height="150"
+                          alt=""
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author">TypeScript</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          Desarrollo con TypeScript.
+                          <a
+                            href="assets/pdfs/typescript.pdf"
+                            target="_blank"
+                            class="text-white"
+                            download
+                            >Descargar</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/logos/nodejs.png"
+                          height="150"
+                          alt=""
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author">NodeJs API</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          Creacion de API node + express.
+                          <a
+                            href="assets/pdfs/nodeJs.pdf"
+                            target="_blank"
+                            class="text-white"
+                            download
+                            >Descargar</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img
+                          src="assets/img/logos/solid.png"
+                          height="150"
+                          alt=""
+                          class="rounded-circle b-shadow-a"
+                        />
+                        <span class="author">Principios Solid</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                          Principios solid.
+                          <a
+                            href="assets/pdfs/solid.pdf"
+                            target="_blank"
+                            class="text-white"
+                            download
+                            >Descargar</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
           
         </div> -->
-          </div>
-        </div>
-      </div>
-    </div><!-- End Testimonials Section -->
-  </main><!-- End #main -->
-  <!-- End Modal-->
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright"><!--&copy; Copyright--> <strong>Eduard Eddy Acevedo Bracho</strong>.</p>
-            <div class="credits">
-              Ingeniero en Inform&aacute;tica
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer><!-- End  Footer -->
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <!-- End Testimonials Section -->
+    </main>
+    <!-- End #main -->
+    <!-- End Modal-->
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">
+                <!--&copy; Copyright-->
+                <strong>Eduard Eddy Acevedo Bracho</strong>.
+              </p>
+              <div class="credits">Ingeniero en Inform&aacute;tica</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End  Footer -->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Vendor JS Files -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CH5R489B2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Vendor JS Files -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9CH5R489B2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-9CH5R489B2');
-  </script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+      gtag("config", "G-9CH5R489B2");
+    </script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", async function(event) {
-      const data = [];
-      const resp = await fetch('https://gag-429cc.firebaseio.com/experiencia/.json');
-      const respData = await resp.json();
-      
-      let toHtml = '';
-      toHtml+=htmlData(respData["proyecto25"], false);
-      toHtml+=htmlData(respData["proyecto24"], false);
-      toHtml+=htmlData(respData["proyecto22"], false);
-      toHtml+=htmlData(respData["proyecto15"], false);
-      toHtml+=htmlData(respData["proyecto16"], false);
-      toHtml+=htmlData(respData["proyecto5"], false);
-      toHtml+=htmlData(respData["proyecto9"], false);
-      toHtml+=htmlData(respData["proyecto12"], false);
-      toHtml+=htmlData(respData["proyecto10"], false);
-      toHtml+=htmlData(respData["proyecto13"], false);
-      toHtml+=htmlData(respData["proyecto3"], false);
-      toHtml+=htmlData(respData["proyecto1"], false);
-      toHtml+=htmlData(respData["proyecto4"], false);
-      toHtml+=htmlData(respData["proyecto2"], false);
-      toHtml+=htmlData(respData["proyecto6"], false);
-      toHtml+=htmlData(respData["proyecto8"], false);
-      document.getElementById("portfolio_web").innerHTML = toHtml;
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async function (event) {
+        const data = [];
+        const resp = await fetch(
+          "https://gag-429cc.firebaseio.com/experiencia/.json"
+        );
+        const respData = await resp.json();
 
-      let toHtmlMobile = '';
-      
-      toHtmlMobile+=htmlData(respData["proyecto23"], true);
-      toHtmlMobile+=htmlData(respData["proyecto18"], true);
-      toHtmlMobile+=htmlData(respData["proyecto21"], true);
-      toHtmlMobile+=htmlData(respData["proyecto20"], true);
-      toHtmlMobile+=htmlData(respData["proyecto17"], true);
-      toHtmlMobile+=htmlData(respData["proyecto19"], true);
-      toHtmlMobile+=htmlData(respData["proyecto7"], true);
-      toHtmlMobile+=htmlData(respData["proyecto11"], true);
-      toHtmlMobile+=htmlData(respData["proyecto14"], true);
-      document.getElementById("portfolio_mobile").innerHTML = toHtmlMobile;
-    });
+        let toHtml = "";
+        toHtml += htmlData(respData["proyecto25"], false);
+        toHtml += htmlData(respData["proyecto24"], false);
+        toHtml += htmlData(respData["proyecto22"], false);
+        toHtml += htmlData(respData["proyecto15"], false);
+        toHtml += htmlData(respData["proyecto16"], false);
+        toHtml += htmlData(respData["proyecto5"], false);
+        toHtml += htmlData(respData["proyecto9"], false);
+        toHtml += htmlData(respData["proyecto12"], false);
+        toHtml += htmlData(respData["proyecto10"], false);
+        toHtml += htmlData(respData["proyecto13"], false);
+        toHtml += htmlData(respData["proyecto3"], false);
+        toHtml += htmlData(respData["proyecto1"], false);
+        toHtml += htmlData(respData["proyecto4"], false);
+        toHtml += htmlData(respData["proyecto2"], false);
+        toHtml += htmlData(respData["proyecto6"], false);
+        toHtml += htmlData(respData["proyecto8"], false);
+        document.getElementById("portfolio_web").innerHTML = toHtml;
 
-    function htmlData(data, mobile) {
-      const info = `<div class="col-md-4">
+        let toHtmlMobile = "";
+
+        toHtmlMobile += htmlData(respData["proyecto26"], true);
+        toHtmlMobile += htmlData(respData["proyecto23"], true);
+        toHtmlMobile += htmlData(respData["proyecto18"], true);
+        toHtmlMobile += htmlData(respData["proyecto21"], true);
+        toHtmlMobile += htmlData(respData["proyecto20"], true);
+        toHtmlMobile += htmlData(respData["proyecto17"], true);
+        toHtmlMobile += htmlData(respData["proyecto19"], true);
+        toHtmlMobile += htmlData(respData["proyecto7"], true);
+        toHtmlMobile += htmlData(respData["proyecto11"], true);
+        toHtmlMobile += htmlData(respData["proyecto14"], true);
+        document.getElementById("portfolio_mobile").innerHTML = toHtmlMobile;
+      });
+
+      function htmlData(data, mobile) {
+        const info = `<div class="col-md-4">
         <div class="work-box">
-          <a href="./details.html?project=${data['position']}&mobile=${mobile}" data-gallery="portfolioGallery" class="portfolio-lightbox" target='_blank'>
+          <a href="./details.html?project=${
+            data["position"]
+          }&mobile=${mobile}" data-gallery="portfolioGallery" class="portfolio-lightbox" target='_blank'>
             <div class="work-img">
               <center>
-                <img src="${data.images['img1']}" alt="" class="img-fluid" style="max-width: ${mobile?'20rem':''}">
+                <img src="${
+                  data.images["img1"]
+                }" alt="" class="img-fluid" style="max-width: ${
+          mobile ? "20rem" : ""
+        }">
               </center>  
             </div>
           </a>
           <div class="work-content">
             <div class="row">
               <div class="col-sm-8">
-                <h2 class="w-title">Proyecto: ${data['nombre']}</h2>
+                <h2 class="w-title">Proyecto: ${data["nombre"]}</h2>
                 <div class="w-more">
-                  <strong>Tecnólogias</strong> <span class="w-ctegory">${data['lenguajes']}</span> 
+                  <strong>Tecnólogias</strong> <span class="w-ctegory">${
+                    data["lenguajes"]
+                  }</span> 
                   <br />
-                  <strong>Año</strong> <span class="w-date">${data['anio']}</span>
+                  <strong>Año</strong> <span class="w-date">${
+                    data["anio"]
+                  }</span>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -470,13 +756,12 @@
           </div>
         </div>
       </div>`;
-      return info;
-    }
+        return info;
+      }
 
-    function addProjectToStorage(project) {
-      localStorage.setItem('project', JSON.stringify(project));
-    }
-  </script>
-</body>
-
+      function addProjectToStorage(project) {
+        localStorage.setItem("project", JSON.stringify(project));
+      }
+    </script>
+  </body>
 </html>
